@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Sección Superior - Hero */
+.seccion-superior {
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.contenido-hero {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding: 0 2rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+}
+
+.btn-principal {
+  width: 499px;
+  height: 70px;
+  box-sizing: border-box; /*para que mantenga el tamaño que le doy , sin cambios*/
+  padding: 0;
+  background-color: rgb(209, 199, 191);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+}
+
+.seccion-inferior {
+  width: 100vw;
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  color: white;
+  position: relative;
+}
+
+h1 {
+  font-size: 98px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  color: rgb(231, 207, 158);
+  margin: 0 auto;
+  max-width: 100%;
+}
+h1 br {
+  display: block;
+  content: "";
+  margin-top: 30px;
+}
+
+.seccion-inferior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+}
