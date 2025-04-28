@@ -30,6 +30,6 @@ Es la simulación de un proyecto de una elegante e-commerce de joyería de lujo 
 Clona este repositorio
 
 ```bash
-git clone https://github.com/Anitasoyyo/NoirAbeille.git
-cd NoirAbeille
+git clone https://github.com/Anitasoyyo/Noirabeille.git
+cd Noirabeille
 ```
